@@ -1,3 +1,4 @@
+# ![PublicСatering](https://user-images.githubusercontent.com/31171568/238048826-650ff8b5-f3d5-4070-8f0e-d88c0b48fb4b.jpg)
 # README
 
 PublicСatering - букинг для общепита с возможностью бронирования столиков \(без предоплаты\).
