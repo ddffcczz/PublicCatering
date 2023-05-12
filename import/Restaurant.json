@@ -1,0 +1,23 @@
+[
+  {
+    "cuisine": {
+      "name": "Unknown",
+      "signatureDishes": true
+    },
+    "showProgram": false,
+    "name": "Партизан",
+    "phoneNum": 2594499,
+    "address": "Комсомольский пр, 1",
+    "stars": 4
+  },{
+    "cuisine": {
+      "name": "Unknown",
+      "signatureDishes": true
+    },
+    "showProgram": false,
+    "name": "Партизан23",
+    "phoneNum": 2594499,
+    "address": "Комсfvомольский пр, 1",
+    "stars": 4
+  }
+]

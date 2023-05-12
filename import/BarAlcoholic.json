@@ -1,0 +1,13 @@
+[
+{
+    "beer": {
+      "Tuborg": 350,
+      "Efes": 250
+    },
+    "nonAlcoholic": false,
+    "name": "Кельш",
+    "phoneNum": 2939404,
+    "address": "ул. Ленина, 7а",
+    "stars": 5
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "cuisine": {
+      "name": "Unknown",
+      "signatureDishes": true
+    },
+    "showProgram": false,
+    "name": "Партизан",
+    "phoneNum": 2594499,
+    "address": "Комсомольский пр, 1",
+    "stars": 4
+  },
+  {
+    "cuisine": {
+      "name": "Unknown",
+      "signatureDishes": true
+    },
+    "showProgram": false,
+    "name": "Партизан23",
+    "phoneNum": 2594499,
+    "address": "Комсfvомольский пр, 1",
+    "stars": 4
+  },
+  {
+    "nonAlcoholic": true,
+    "name": "Золотой Ключик",
+    "phoneNum": 2063033,
+    "address": "Парковый, 1",
+    "stars": 3
+  },
+  {
+    "beer": {
+      "Tuborg": 350,
+      "Efes": 250
+    },
+    "nonAlcoholic": false,
+    "name": "Кельш",
+    "phoneNum": 2939404,
+    "address": "ул. Ленина, 7а",
+    "stars": 5
+  },
+  {
+    "fullCycle": true,
+    "name": "Хуторок",
+    "phoneNum": 2576061,
+    "address": "ул. Ленина, 60",
+    "stars": 4
+  },
+  {
+    "fullCycle": true,
+    "name": "Хуто3fрок",
+    "phoneNum": 2576061,
+    "address": "ул. Ленина, 60",
+    "stars": 4
+  },
+  {
+    "bound": "School",
+    "name": "У Галины",
+    "phoneNum": 2987660,
+    "address": "ул. Дениса Давыдова, 13",
+    "stars": 2
+  }
+]
