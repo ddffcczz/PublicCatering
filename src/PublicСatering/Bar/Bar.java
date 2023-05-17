@@ -4,11 +4,11 @@ import java.util.Objects;
 
 public class Bar extends PublicСatering {
     boolean nonAlcoholic;
-    public Bar(String name, Integer phoneNum, String address, boolean nonAlcoholic) {
+    public Bar(String name, String phoneNum, String address, boolean nonAlcoholic) {
         super(name, phoneNum, address);
         this.nonAlcoholic = nonAlcoholic;
     }
-    public Bar(Long id,String name, Integer phoneNum, String address, boolean nonAlcoholic, int stars) {
+    public Bar(Long id,String name, String phoneNum, String address, boolean nonAlcoholic, int stars) {
         super(id,name,phoneNum,address,stars);
         //super(id, name, phoneNum, address);
         this.nonAlcoholic = nonAlcoholic;

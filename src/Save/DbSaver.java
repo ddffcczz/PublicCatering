@@ -37,7 +37,7 @@ public class DbSaver implements iSave{
         while (barMysql.next()) {
             Long id = (long) barMysql.getInt("id");
             String name = barMysql.getString("name");
-            Integer phoneNum = barMysql.getInt("phoneNum");
+            String phoneNum = barMysql.getString("phoneNum");
             String address = barMysql.getString("address");
             Integer stars = barMysql.getInt("stars");
             caterings.add(new Bar(id,name,phoneNum,address,true,stars));
@@ -51,7 +51,7 @@ public class DbSaver implements iSave{
         while (diningRoomMysql.next()) {
             Long id = (long) diningRoomMysql.getInt("id");
             String name = diningRoomMysql.getString("name");
-            Integer phoneNum = diningRoomMysql.getInt("phoneNum");
+            String phoneNum = diningRoomMysql.getString("phoneNum");
             String address = diningRoomMysql.getString("address");
             String bound = diningRoomMysql.getString("bound");
             Integer stars = diningRoomMysql.getInt("stars");
@@ -66,7 +66,7 @@ public class DbSaver implements iSave{
         while (cafeMysql.next()) {
             Long id = (long) cafeMysql.getInt("id");
             String name = cafeMysql.getString("name");
-            Integer phoneNum = cafeMysql.getInt("phoneNum");
+            String phoneNum = cafeMysql.getString("phoneNum");
             String address = cafeMysql.getString("address");
             Boolean fullCycle = cafeMysql.getBoolean("fullCycle");
             Integer stars = cafeMysql.getInt("stars");
@@ -91,7 +91,7 @@ public class DbSaver implements iSave{
         while (restaurantMysql.next()) {
             Long id = (long) restaurantMysql.getInt("id");
             String name = restaurantMysql.getString("name");
-            Integer phoneNum = restaurantMysql.getInt("phoneNum");
+            String phoneNum = restaurantMysql.getString("phoneNum");
             String address = restaurantMysql.getString("address");
             Integer cuisineId = restaurantMysql.getInt("Cuisine");
             boolean showProgram = restaurantMysql.getBoolean("showProgram");
@@ -112,7 +112,7 @@ public class DbSaver implements iSave{
         while (barAlcoholicMysql.next()) {
             Long id = (long) barAlcoholicMysql.getInt("id");
             String name = barAlcoholicMysql.getString("name");
-            Integer phoneNum = barAlcoholicMysql.getInt("phoneNum");
+            String phoneNum = barAlcoholicMysql.getString("phoneNum");
             String address = barAlcoholicMysql.getString("address");
             Integer stars = barAlcoholicMysql.getInt("stars");
             caterings.add(new BarAlcoholic(id,name,phoneNum,address,stars));

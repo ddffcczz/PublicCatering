@@ -4,11 +4,11 @@ import PublicСatering.PublicСatering;
 import java.util.Objects;
 public class DiningRoom extends PublicСatering {
     protected String bound;
-    public DiningRoom(String name, Integer phoneNum, String address, String bound) {
+    public DiningRoom(String name, String phoneNum, String address, String bound) {
         super(name, phoneNum, address);
         this.bound = bound;
     }
-    public DiningRoom(Long id, String name, Integer phoneNum, String address, String bound, Integer stars) {
+    public DiningRoom(Long id, String name, String phoneNum, String address, String bound, Integer stars) {
         super(id,name,phoneNum,address,stars);
         this.bound = bound;
     }

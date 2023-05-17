@@ -7,17 +7,17 @@ public class Restaurant extends PublicСatering {
     protected Cuisine cuisine;
     protected boolean showProgram;
 
-    public Restaurant(String name, Integer phoneNum, String address, Cuisine cuisine, boolean showProgram) {
+    public Restaurant(String name, String phoneNum, String address, Cuisine cuisine, boolean showProgram) {
         super(name, phoneNum, address);
         this.cuisine = cuisine;
         this.showProgram = showProgram;
     }
-    public Restaurant(String name, Integer phoneNum, String address, Cuisine cuisine, boolean showProgram, Integer stars) {
+    public Restaurant(String name, String phoneNum, String address, Cuisine cuisine, boolean showProgram, Integer stars) {
         super(name, phoneNum, address, stars);
         this.cuisine = cuisine;
         this.showProgram = showProgram;
     }
-    public Restaurant(Long id,String name, Integer phoneNum, String address, Cuisine cuisine, boolean showProgram, Integer stars) {
+    public Restaurant(Long id,String name, String phoneNum, String address, Cuisine cuisine, boolean showProgram, Integer stars) {
         super(id,name, phoneNum, address, stars);
         this.cuisine = cuisine;
         this.showProgram = showProgram;
