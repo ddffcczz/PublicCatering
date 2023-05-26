@@ -32,6 +32,34 @@ public class Main {
                 break;
             case 3:
                 saver = (iSave) new DbSaver();
+                System.out.println("Какое заведение будем добавлять?");
+                System.out.println("1 - Restaurant");
+                System.out.println("2 - Bar");
+                System.out.println("3 - BarAlcoholic");
+                System.out.println("4 - Cafe");
+                System.out.println("5 - DiningRoom");
+                int mode = scanner.nextInt();
+
+                switch (mode){
+                    case 1:
+                        saver.save(ServiceAction.createRestaurant());
+                        System.out.println("Загрузка в дб сайв зашла.");
+                        break;
+                    case 2:
+                        saver.save(ServiceAction.createBar());
+                        break;
+                    case 3:
+                        saver.save(ServiceAction.createBarAlcoholic());
+                        break;
+                    case 4:
+                        saver.save(ServiceAction.createCafe());
+                        break;
+                    case 5:
+                        saver.save(ServiceAction.createDiningRoom());
+                        break;
+                    default:
+                        throw new IllegalArgumentException("Неверный ввод числа.");
+                }
                 break;
             default:
                 Map<String, Integer> beerPrice = new HashMap<>();
@@ -66,7 +94,7 @@ public class Main {
     }
     public static void main(String[] args) throws IOException, SQLException {
         initSaver();
-        initPrint();
+        //initPrint();
         print.showPublicСatering(saver.getAll());
     }
 }

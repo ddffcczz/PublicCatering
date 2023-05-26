@@ -7,11 +7,7 @@ import PublicСatering.DiningRoom.DiningRoom;
 import PublicСatering.PublicСatering;
 import PublicСatering.Restaurant.Restaurant;
 
-import java.sql.SQLException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.*;
 
 public class DbSaver implements iSave{
@@ -162,6 +158,9 @@ public class DbSaver implements iSave{
     @Override
     public void save(PublicСatering catering) {
         //to do /// insert into...
+
+
+       // ResultSet barMysql = mysqlClient("insert into"  +  + );
     }
 
     @Override
