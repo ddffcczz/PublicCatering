@@ -107,4 +107,9 @@ public class FileSaver implements iSave {
     public void dropALl() {
         caterings.clear();
     }
+
+    @Override
+    public void saveRestaurant(PublicСatering catering) {
+
+    }
 }

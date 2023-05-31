@@ -42,6 +42,17 @@ public class PublicСatering {
         this.stars = star;
     }
 
+    // заблокировал сеетер - вроде пока не нужен.
+//    public void setPhoneNum (Integer phoneNum) {
+//        this.phoneNum = phoneNum;
+//    }
+    public Integer getPhoneNum () {
+        return phoneNum;
+    }
+    public String getAddress(){
+        return address;
+    }
+
     @Override
     public String toString() {
         return "PublicСatering{" +

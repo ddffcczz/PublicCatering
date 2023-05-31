@@ -3,7 +3,7 @@ import java.sql.SQLException;
 import java.util.List;
 import PublicСatering.PublicСatering;
 public interface iSave {
-    void save(PublicСatering catering);
+    void save(PublicСatering catering) throws SQLException;
     void drop(PublicСatering catering);
     void dropPosition(Integer pos);
     List<PublicСatering>getAll() throws SQLException;
@@ -12,5 +12,7 @@ public interface iSave {
     List<PublicСatering>getAllByStars(Integer age);
     List<PublicСatering>getAllByStarsRange(Integer startAge, Integer lastAge);
     void dropALl();
+    void saveRestaurant(PublicСatering catering);
+
 
 }

@@ -10,10 +10,12 @@ public class ServiceAction extends PublicСatering{
 
 
     public static PublicСatering createRestaurant() throws SQLException {
-        Scanner scanner = new Scanner(System.in);
+
         boolean SignatureDishes = false;
         String nameCuisine = "Non";
-        boolean showProgram = false;
+        boolean showProgram;
+
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Введите наименование ресторана: ");
         String name = scanner.next();
 
@@ -26,7 +28,7 @@ public class ServiceAction extends PublicСatering{
             System.out.print("Введите улицу: ");
             String street = scanner.next();
             System.out.print("Введите номер дома: ");
-            Integer house = scanner.nextInt();
+            int house = scanner.nextInt();
         String address = city + ", " + street + ", " + house;
 
         System.out.print("Есть ли фирменное блюдо в меню? 1 - да, 0 - нет: ");
@@ -38,8 +40,7 @@ public class ServiceAction extends PublicСatering{
         } else if (modeSignatureDishes == 0){
             SignatureDishes = false;
         } else {
-            SignatureDishes = false;
-            System.out.println("введено неверное число. Фирменного блюда нет.");
+          System.out.println("введено неверное число. Фирменного блюда нет.");
         }
 
         Cuisine cuisine = new Cuisine(nameCuisine,SignatureDishes);
@@ -55,7 +56,8 @@ public class ServiceAction extends PublicСatering{
             System.out.println("введено неверное число. шоу-программы нет.");
         }
 
-        PublicСatering publicСatering = new Restaurant(name, phoneNumber, address, cuisine, showProgram);
+        PublicСatering publicСatering;
+        publicСatering = new Restaurant(name, phoneNumber, address, cuisine, showProgram);
 
         return publicСatering;
     }

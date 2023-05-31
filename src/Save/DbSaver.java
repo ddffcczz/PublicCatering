@@ -24,6 +24,9 @@ public class DbSaver implements iSave{
     private ResultSet mysqlClient(String query) throws SQLException{
         return statement.executeQuery(query);
     }
+    private void mysqlInsert(String upd) throws SQLException{
+         statement.executeUpdate(upd);
+    }
     public DbSaver() throws SQLException {
         /*Bar
         CREATE TABLE Bar (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(20), phoneNum VARCHAR(11), address VARCHAR(255), nonAlcoholic int DEFAULT 1, stars INT);
@@ -156,11 +159,19 @@ public class DbSaver implements iSave{
     }
 
     @Override
-    public void save(PublicСatering catering) {
+    public void saveRestaurant(PublicСatering catering) {
+        try {
+            String qwery =  "insert into PublicСatering.Restaurant (name, phoneNum, address, Cuisine, showProgram, stars) " +
+                    " values(" + "\"" + catering.getName()  + "\", " +  "\"" + catering.getPhoneNum().toString()  + "\", " + "\"" +catering.getAddress()  + "\", " + " 1, 1, NULL);";
+            System.out.println(qwery);
+            mysqlInsert(qwery);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void save(PublicСatering catering){
         //to do /// insert into...
-
-
-       // ResultSet barMysql = mysqlClient("insert into"  +  + );
     }
 
     @Override

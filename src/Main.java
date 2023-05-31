@@ -42,7 +42,7 @@ public class Main {
 
                 switch (mode){
                     case 1:
-                        saver.save(ServiceAction.createRestaurant());
+                        saver.saveRestaurant(ServiceAction.createRestaurant());
                         System.out.println("Загрузка в дб сайв зашла.");
                         break;
                     case 2:
@@ -92,6 +92,7 @@ public class Main {
                 print = new ConsolePrint();
         }
     }
+
     public static void main(String[] args) throws IOException, SQLException {
         initSaver();
         //initPrint();
