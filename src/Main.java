@@ -14,6 +14,7 @@ import Save.FileSaver;
 import Save.DbSaver;
 import Save.RuntimeSaver;
 import Save.iSave;
+import WebSocket.ws;
 
 public class Main {
     private static iSave saver = null;
@@ -65,8 +66,12 @@ public class Main {
         }
     }
     public static void main(String[] args) throws IOException, SQLException {
+        int wsPort = 8080;
+        ws wsServer = new ws(wsPort,saver);
+        wsServer.start();
+        //System.out.println("WebSocket-сервер запущен на порту " + wsServer.getPort());
         initSaver();
         initPrint();
-        print.showPublicСatering(saver.getAll());
+        //print.showPublicСatering(saver.getAll());
     }
 }

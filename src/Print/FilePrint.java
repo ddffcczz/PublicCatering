@@ -7,8 +7,6 @@ import java.io.IOException;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-
-
 public class FilePrint implements iPrint{
     //Gson gson = new Gson();
     Gson gson = new GsonBuilder().setPrettyPrinting().create();

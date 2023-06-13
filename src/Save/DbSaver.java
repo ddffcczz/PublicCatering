@@ -148,7 +148,7 @@ public class DbSaver implements iSave{
                     Map<String, Integer> beerPrice = new HashMap<>();
                     for(int y=0;y<priceL2.get(key).size();y++){
                         Map<String, Integer> beerTmpPrice = new HashMap<>();
-                        beerTmpPrice = (Map<String, Integer>) priceL2.get(key).get(y); //я тут чуть не свихнулся с приведениями к нужным типам %)
+                        beerTmpPrice = (Map<String, Integer>) priceL2.get(key).get(y);
                         beerTmpPrice.forEach((k,v)->{
                             beerPrice.put(k,v);
                         });
