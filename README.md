@@ -51,6 +51,8 @@ src/
 
 * mysql.connector.java \(8.0.30\) - для взаимодействия с бд
 * google.code.gson \(2.8.0\) - для реализации сохранения\\импорта из json-файлов
+* ch.qos.logback.classic \(1.2.3\) - просил websocket установить
+* java.websocket.Java.WebSocket \(1.5.1\) - websocket server, для общения с android app.
 
 ### Структура БД
 
