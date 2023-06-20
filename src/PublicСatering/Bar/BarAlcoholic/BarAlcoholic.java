@@ -5,11 +5,11 @@ import java.util.Objects;
 
 public class BarAlcoholic extends Bar {
     private Map<String, Integer> beer;
-    public BarAlcoholic(String name, Integer phoneNum, String address, Map<String, Integer>beer) {
+    public BarAlcoholic(String name, String phoneNum, String address, Map<String, Integer>beer) {
         super(name, phoneNum, address, false);
         this.beer = beer;
     }
-    public BarAlcoholic(Long id,String name, Integer phoneNum, String address, int stars) {
+    public BarAlcoholic(Long id,String name, String phoneNum, String address, int stars) {
         super(id, name, phoneNum, address, false, stars);
     }
     public void connectPrice(Map<String, Integer>beer){

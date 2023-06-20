@@ -4,11 +4,11 @@ import java.util.Objects;
 
 public class Cafe extends PublicСatering {
     boolean fullCycle;
-    public Cafe(String name, Integer phoneNum, String address, boolean fullCycle) {
+    public Cafe(String name, String phoneNum, String address, boolean fullCycle) {
         super(name, phoneNum, address);
         this.fullCycle = fullCycle;
     }
-    public Cafe(Long id,String name, Integer phoneNum, String address, boolean fullCycle, Integer stars) {
+    public Cafe(Long id,String name, String phoneNum, String address, boolean fullCycle, Integer stars) {
         super(id,name,phoneNum,address,stars);
         //super(name, phoneNum, address);
         this.fullCycle = fullCycle;

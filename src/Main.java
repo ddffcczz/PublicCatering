@@ -66,15 +66,15 @@ public class Main {
                 beerPrice.put("Bud", 250);
                 beerPrice.put("Heineken", 350);
                 saver = new RuntimeSaver();
-                saver.save(new Restaurant("ExampleRest1",2594499,"Street, 1", new Cuisine("Unknown",true),false));
+                saver.save(new Restaurant("ExampleRest1","2594499","Street, 1", new Cuisine("Unknown",true),false));
                 saver.getLastElement().setStars(4);
-                saver.save(new Bar("Gold Key",2063033,"Street, 2", true));
+                saver.save(new Bar("Gold Key","2063033","Street, 2", true));
                 saver.getLastElement().setStars(3);
-                saver.save(new BarAlcoholic("Kelsh",2939404,"Street, 7", beerPrice));
+                saver.save(new BarAlcoholic("Kelsh","2939404","Street, 7", beerPrice));
                 saver.getLastElement().setStars(5);
-                saver.save(new Cafe("Khutorok",2576061,"Street, 60", true));
+                saver.save(new Cafe("Khutorok","2576061","Street, 60", true));
                 saver.getLastElement().setStars(4);
-                saver.save(new DiningRoom("U Gali", 2987660 ,"Street,13", "School"));
+                saver.save(new DiningRoom("U Gali", "2987660" ,"Street,13", "School"));
                 saver.getLastElement().setStars(2);
         }
     }
@@ -92,10 +92,13 @@ public class Main {
                 print = new ConsolePrint();
         }
     }
-
     public static void main(String[] args) throws IOException, SQLException {
+        int wsPort = 8080;
+        ws wsServer = new ws(wsPort,saver);
+        wsServer.start();
+        //System.out.println("WebSocket-сервер запущен на порту " + wsServer.getPort());
         initSaver();
-        //initPrint();
+        initPrint();
         print.showPublicСatering(saver.getAll());
     }
 }

@@ -4,22 +4,22 @@ import java.util.Objects;
 public class PublicСatering {
     protected Long id;
     protected String name;
-    protected Integer phoneNum;
+    protected String phoneNum;
     protected String address;
     protected Integer stars;
 
-    public PublicСatering(String name,Integer phoneNum,String address){
+    public PublicСatering(String name,String phoneNum,String address){
         this.name = name;
         this.phoneNum = phoneNum;
         this.address = address;
     }
-    public PublicСatering(String name,Integer phoneNum,String address,Integer stars){
+    public PublicСatering(String name,String phoneNum,String address,Integer stars){
         this.name = name;
         this.phoneNum = phoneNum;
         this.address = address;
         this.stars = stars;
     }
-    public PublicСatering(Long id,String name,Integer phoneNum,String address,Integer stars){
+    public PublicСatering(Long id,String name,String phoneNum,String address,Integer stars){
         this.id = id;
         this.name = name;
         this.phoneNum = phoneNum;
